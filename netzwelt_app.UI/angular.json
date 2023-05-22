@@ -63,7 +63,8 @@
               "browserTarget": "netzwelt_app.UI:build:production"
             },
             "development": {
-              "browserTarget": "netzwelt_app.UI:build:development"
+              "browserTarget": "netzwelt_app.UI:build:development",
+              "proxyConfig": "./proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

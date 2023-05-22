@@ -1,0 +1,17 @@
+<div>
+  <div>
+    Username:
+    <br>
+    <input [(ngModel)]="user!.username" type="text">
+  </div>
+  <br>
+  <div>
+    Password:
+    <br>
+    <input [(ngModel)]="user!.password" type="password">
+  </div>
+  <br>
+  <p *ngIf="showErrorDialog" style="color: red">Login Failed! Please enter your correct credentials.</p>
+  <br>
+  <button (click)="click()">Log In</button>
+</div>
