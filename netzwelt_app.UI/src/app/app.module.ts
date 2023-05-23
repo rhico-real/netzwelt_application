@@ -7,12 +7,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { TerritoryNodeComponent } from './components/home/territory-node/territory-node.component';
+import { TerritoryTreeComponent } from './components/home/territory-tree/territory-tree.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    TerritoryNodeComponent,
+    TerritoryTreeComponent
   ],
   imports: [
     BrowserModule,

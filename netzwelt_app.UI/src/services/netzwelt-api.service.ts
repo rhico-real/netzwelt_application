@@ -23,7 +23,7 @@ export class NetzweltApiService {
     return this.http.post<UserResponse>(`${environment.apiUrl}/${this.loginUrl}`,  JSON.stringify(userParams), httpOptions);
   }
 
-  public getAllTerritories() : Observable<Territory[]>{
-    return this.http.get<Territory[]>(`${environment.apiUrl}/${this.getTerritoriesUrl}`);
+  public getAllTerritories() : Observable<Territory>{
+    return this.http.get<Territory>(`${environment.apiUrl}/${this.getTerritoriesUrl}`);
   }
 }

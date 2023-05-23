@@ -1,0 +1,7 @@
+<li>
+  {{ node.value }}
+  <ul *ngIf="node.left || node.right">
+    <app-territory-node [node]="node.left" *ngIf="node.left"></app-territory-node>
+    <app-territory-node [node]="node.right" *ngIf="node.right"></app-territory-node>
+  </ul>
+</li>
