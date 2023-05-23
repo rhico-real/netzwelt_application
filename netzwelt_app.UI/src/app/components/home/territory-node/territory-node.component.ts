@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TerritoryTreeNode } from 'src/models/territories';
+import { TerritoryData } from 'src/models/territories';
 
 @Component({
   selector: 'app-territory-node',
@@ -7,13 +7,9 @@ import { TerritoryTreeNode } from 'src/models/territories';
   styleUrls: ['./territory-node.component.css']
 })
 export class TerritoryNodeComponent {
-  @Input() node: TerritoryTreeNode;
+  @Input() node: TerritoryData[];
 
   constructor(){
-    this.node = {
-      value: 0,
-      id: 0,
-      parent: 0
-    }
+    this.node = []
   }
 }

@@ -1,4 +1,4 @@
 export const environment = {
   // Point this to backend/server
-  apiUrl: "https://localhost:32778/api/Service"
+  apiUrl: "https://localhost:32780/api/Service"
 };

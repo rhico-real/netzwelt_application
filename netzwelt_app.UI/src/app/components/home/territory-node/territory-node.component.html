@@ -1,7 +1,10 @@
-<li>
-  {{ node.value }}
-  <ul *ngIf="node.left || node.right">
-    <app-territory-node [node]="node.left" *ngIf="node.left"></app-territory-node>
-    <app-territory-node [node]="node.right" *ngIf="node.right"></app-territory-node>
-  </ul>
-</li>
+<ul>
+  <ng-container *ngFor="let item of node">
+    <li>
+      <span>{{ item.name }}</span>
+      <ng-container *ngIf="item.children && item.children.length > 0">
+        <app-territory-node [node]="item.children"></app-territory-node>
+      </ng-container>
+    </li>
+  </ng-container>
+</ul>

@@ -34,7 +34,6 @@ export class LoginComponent {
     this.showErrorDialog = false;
     this.netzweltapi.login(this.user!).subscribe(
       (data) => {
-        console.log(data);
         this.router.navigate(['/home/index']);
 
         this.cookieService.set('authenticated', 'true');
